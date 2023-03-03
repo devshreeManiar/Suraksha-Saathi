@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Get help</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h1 class="w3-padding-64"><b>Suraksha <br>Saathi</b></h1>
+  </div>
+  <div class="w3-bar-block">
+    <a href="upload.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <!-- <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Refresh</a>  -->
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Suraksha Sathi</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Legal Rights</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <ul>
+        <li><a href="https://www.indiacode.nic.in/bitstream/123456789/15436/1/protection_of_women_from_domestic_violence_act%2C_2005.pdf">Protection of Women from Domestic Violence Act (2005)</a></li>
+        <br>
+        <li><a href="https://byjus.com/free-ias-prep/immoral-traffic-prevention-act-itpa/#:~:text=The%20Immoral%20Traffic%20(Prevention)%20Act%20or%20ITPA%20is%20a%201986,on%20the%20suppression%20">The Immoral Traffic (Prevention) Act, 1986 (PITA)</a></li>
+        <br>
+        <li><a href="https://legislative.gov.in/sites/default/files/A1986-60_0.pdf">Indecent Representation of Women (Prohibition) Act (1986)</a></li>
+        <br>
+        <li><a href="https://www.indiacode.nic.in/bitstream/123456789/1814/2/A1988-03.pdf">Commission of Sati (Prevention) Act (1987)</a></li>
+        <br>
+        <li><a href="https://main.mohfw.gov.in/acts-rules-and-standards-health-sector/acts/mtp-act-1971#:~:text=The%20Medical%20Termination%20of%20Pregnancy%20Act%2C%201971&text=An%20Act%20to%20provide%20for,connec">Medical Termination of Pregnancy Act (1971)</a></li>
+        <br>
+        <li><a href="https://www.indianbarassociation.org/sexual-harassment-of-women-at-workplace-prevention-prohibition-redressal-act-2013/">The Sexual Harassment of Women at Work Place (Prevention and Protection) Act (2013) </a></li>
+    </ul>
+    <br>
+    <br>
+    <h3><b>Apart from the above-mentioned rights, there are following general laws that every woman should know:</b></h3>
+    <ul>
+        <li><b>Right to privacy</b></li>
+        A woman who has been raped has a right to record her statement in private in front of the magistrate without being overheard by anyone else or with a lady constable or a police officer in person. Under section 164 of the Criminal Procedure Code, the cops will have to give the privacy to the victim without stressing her in front of masses.
+        <br>
+        <br>
+        <li><b>Right to Zero FIR</b></li>
+        As according to the Supreme Court ruling a rape victim can register her police complaint from any police station under the Zero FIR.
+        <br>
+        <br>
+        <li><b>Right to free aid</b></li>
+        When a woman goes to the police station without being accompanied by a lawyer she should be aware of the fact that she has a right to get the legal aid and that she should demand it.
+        <br>
+        <br>
+        <li><b>Right to no arrest</b></li>
+        According to a Supreme Court ruling, a woman cannot be arrested after sunset and before sunrise. Except, in case the woman has committed a serious crime, the police require to get it in writing from the magistrate explaining why the arrest is necessary during the night.
+        <br>
+        <br>
+        <li><b>Right to not being called to the police station</b></li>
+        According to section 160 of the Criminal Procedure Code, women cannot be called to the police station for interrogation. The police can interrogate a woman at her residence in the presence of a woman constable and family members or friends.
+
+    </ul>
+    
+
+
+  </div>
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
